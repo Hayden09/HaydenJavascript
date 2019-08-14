@@ -103,3 +103,6 @@ else if (pin = 7689 && amount <= 0) {
 else {
     console.log ("error, unable to complete request");
 }
+//For this challenge the account pin must match, and the amount of money to withdraw must be above zero
+//In the instance that the amount is depleted, but the number matches the user is informed of insfficient funds
+//if the account pin is incorrect the customer is otherwise met with an error.
