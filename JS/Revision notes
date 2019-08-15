@@ -108,6 +108,13 @@ For example if I type, "const firstName = "Hayden";", and then later want to typ
 
 Constants Must:
 - Be activated using bracers (`) instead of quotes (")
-- When using a constant in a string, we types it as "'Hello, my name is ${firstName}';"
+- When using a constant in a string, we type it as "'Hello, my name is ${firstName}';"
 
-Operators are a type of variable storer.
+Operators are used to store values and come in many different forms:
+- equals (=)
+- multiplication (*=)
+- addition (+=)
+- division (/=)
+- subtraction (-=)
+- increment (++)
+- decrement (--)

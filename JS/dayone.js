@@ -46,7 +46,8 @@
 
 //const favouriteDrink = "coffee";
 //favouriteDrink = "coffee";
-
+let Five = "the number 5"
+console.log 
 //challenge 2 variables
 
 //practice
