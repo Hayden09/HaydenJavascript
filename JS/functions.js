@@ -106,3 +106,13 @@ else {
 //For this challenge the account pin must match, and the amount of money to withdraw must be above zero
 //In the instance that the amount is depleted, but the number matches the user is informed of insfficient funds
 //if the account pin is incorrect the customer is otherwise met with an error.
+
+console.log("-------------------------")
+console.log("day 4 - first things first - sandwich:");
+
+const sandwichOrder = (top1,top2,top3,top4,top5) =>{
+    console.log (`we are preparing your sandwich order with: ${top1}, ${top2}, ${top3}, ${top4}, ${top5}`);
+}
+
+sandwichOrder ("Pepperoni", "redonion", "jalepeno", "beef", "cucumber");
+//Example copied. 

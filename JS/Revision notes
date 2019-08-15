@@ -1,0 +1,113 @@
+Recap notes on javascript:
+
+Part 1 - Terminal functions recap:
+we can either use the terminal on the macbook desktop or the terminal presented in VScode.
+the ($) should be present when typing the upcoming commands, don't include the "()" symbols.
+
+($ pwd/Users/codenation/) shows us where we are located.
+($ ls) displays what is in the directory and lets you choose where to go next.
+($ cd) Lets us go to the place we want to, for example ($ cd Desktop).
+We can also visit directories inside directories, for instance we can type ($ cd Desktop/demo).
+($ cd ..) Allows us to go back by one directory.
+Whereas ($ cd ../..) will allow us to go back by two, and so on.
+($ cd ~) Will take us back to the start.
+($ cd Exit) is supposed to exit and close the terminal.
+
+We can use the terminal to upload files to Github quickly using the following steps:
+(This example only uses the terminal from the macbook so the link is already established)
+git status
+git add .
+git commit -m "your commit comment"
+git status
+git push
+
+(we might be asked to login to upload our work - I've written these in my physical notebook.)
+
+part 2 - good general practice:
+when saving files use all lower case and no spaces for filenames
+don't just save numbered files either, make sure there are some words beforehand, 
+At the very least the file names should be meaningful and not random garbage.
+
+part 3 - VS Code shortcuts:
+command + C = "copy"
+command + V = "paste"
+command + Z = "undo"
+command + s = "save"
+^ + fn + F5 = runs the codenation
+
+part 4 - Dot Notation:
+Typed like (Console.log (i);) the Console portion is an object, and the log portion is a property.
+the portion in brackets after the Object.Property (Console.log) is a parameter, of which there are different 
+kinds of parameters, e.g: (console.log ("hello");).
+
+part 5 - Data Types:
+String, represents text.
+Number, represents numbers (Decimals and Integers, like the decimal "0.1" or the integer/ whole number "1").
+Boolean, is used for "True" and "False".
+Null, represents nothing, or an abscence of something.
+Undefined, represents when a data type isn't determined.
+Symbol, This data type is used as the key for an object property when the property is intended to be
+private, for the internal use of a class or object type.
+
+part 6 - Methods:
+Typing console.log ("Hello".length); gives use the numerical length of the word "hello",
+however something to bear in mind is that 0 is also counted as a decimal. So instead of the "o" in "hello"
+being letter 5, it will be displayed as letter 4.
+
+Typing console.log ("hello".toUpperCase()); changes all the words within the string quote to upper case ones.
+
+Typing "Search()" searches a string for a specified value, for example (hello.search(o)), 
+the "o" would carry a value of 4.
+
+We can also apply dot notation into our methods,for example (console.log(Math.random)());
+"Math.random()" are the parameters, and these parameters specifically will generate a random number between 
+0 & 1 (0.1, 0.2 etc).
+If we change the parameter to "(Math.random() *10)", we will instead generate random numbers between 0 and 10.
+Changing the same parameter again, we now add Math.floor, before the rest, 
+so "(Math.floor(Math.random () *10));" which turns the value into an interger, and prevents us from being
+given random decimal numbers.
+
+"Math.Floor"'s function overall is to return an integer of a number equal to or less than the specified number.
+
+Part 8 - Variables and Constants: 
+When typing Variables in Javascript, "let" is the preffered term, 
+and Var is the classic term, which I don't use.
+
+Variables act like boxes we put stuff in and then put a label on: 
+We use variables to store data temporarily in a computers memory, and give the memory location a name.
+We can access this data via the name, and change the data whenever we want.
+
+Variables Must:
+- use camel notation/ camel case, due to being case sensetive. For example "firstName" or "firstNameAnd"
+- have a termination ";" at the end of their declaration, for example "let firstName;"
+- Be initialized via string, for example: "let firstName = "Hayden";"
+- Be used in dot notation by typing the variable inbetween ${};, for example: 
+console.log ("hello my name is ${firstName});
+
+Variables Cannot:
+- Be named the same as reserved keywords (This will cause errors)
+- start with a number, for example "1Name"
+- Contain spaces
+- use hyphens "-"
+
+Variables Can:
+- have their values changed, for example: "let firstName = "Hayden";" can be changed to "let firstName = "Dean";"
+- be types on seperate lines to be declared easily, for example:
+"let greeting = "Hello I am"
+"let firstName = "Hayden"
+- Multiple Var's can be used in dot notation, for example: console.log (`Hello, my name is ${firstName} and
+I live in ${designatedTown});, bracers (`) must be used instead of quotes (")
+
+Variables by default have an undefined value.
+
+Constants are a different type of variable:
+They are typed as "const",they act to anchor values instead of being editable like "let".
+Items in the box can be looked at but stay in place.
+For example if I type, "const firstName = "Hayden";", and then later want to type
+"let firstName = "Dean";", we will get an error message instead.
+
+Constants Must:
+- Be activated using bracers (`) instead of quotes (")
+- When using a constant in a string, we types it as "'Hello, my name is ${firstName}';"
+
+Operators are a type of variable storer.
